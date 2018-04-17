@@ -1,0 +1,5 @@
+module Part2(SW, LEDG);
+
+	Mux_4w_2_to_1([3:0] LEDG, [3:0] SW, [7:4] SW, [17] SW);
+	end
+endmodule

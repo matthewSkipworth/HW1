@@ -1,0 +1,106 @@
+m255
+K4
+z2
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 dC:/UWT/TCES330/Labs/HW1/Part3
+vMux_3w_5_to_1
+Z1 DXx6 sv_std 3 std 0 22 AD7iAPLo6nTIKk<N0eo=D3
+Z2 !s110 1523380124
+!i10b 1
+!s100 z:B1e6ZoI7Q^dR<]2^dbH0
+IB`^N`]j24n2WF_mFLTJh[3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+Z4 !s105 Mux_3w_5_to_1_sv_unit
+S1
+R0
+Z5 w1523380119
+Z6 8./Mux_3w_5_to_1.sv
+Z7 F./Mux_3w_5_to_1.sv
+L0 1
+Z8 OV;L;10.5b;63
+r1
+!s85 0
+31
+Z9 !s108 1523380124.000000
+Z10 !s107 ./Mux_3w_5_to_1.sv|
+Z11 !s90 -reportprogress|300|./Mux_3w_5_to_1.sv|
+!i113 1
+Z12 tCvgOpt 0
+n@mux_3w_5_to_1
+vMux_3w_5_to_1_testbench
+R1
+R2
+!i10b 1
+!s100 0UD@ELNA1JO7OLid:E7bW0
+IjW@aK7XzTNc1RAST=8^F91
+R3
+R4
+S1
+R0
+R5
+R6
+R7
+L0 20
+R8
+r1
+!s85 0
+31
+R9
+R10
+R11
+!i113 1
+R12
+n@mux_3w_5_to_1_testbench
+vMux_5_to_1
+R1
+!s110 1523646645
+!i10b 1
+!s100 ^_;dH7D[<GZahA3E7[[352
+IWBLzWlYW2j?cbeYkUbHbA0
+R3
+Z13 !s105 Mux_5_to_1_sv_unit
+S1
+Z14 dE:/TCES330/labs/HW1/Part3
+Z15 w1523646630
+Z16 8./Mux_5_to_1.sv
+Z17 F./Mux_5_to_1.sv
+L0 1
+R8
+r1
+!s85 0
+31
+Z18 !s108 1523646644.000000
+Z19 !s107 ./Mux_5_to_1.sv|
+Z20 !s90 -reportprogress|300|./Mux_5_to_1.sv|
+!i113 1
+R12
+n@mux_5_to_1
+vMux_5_to_1_testbench
+R1
+!s110 1523646646
+!i10b 1
+!s100 4EXjZi^ijGNL9_W[fnEZ]0
+Icg3;Nl^[nfl3mWkO4>57N3
+R3
+R13
+S1
+R14
+R15
+R16
+R17
+L0 19
+R8
+r1
+!s85 0
+31
+R18
+R19
+R20
+!i113 1
+R12
+n@mux_5_to_1_testbench

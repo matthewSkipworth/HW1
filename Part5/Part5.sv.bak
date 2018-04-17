@@ -1,0 +1,14 @@
+module Part5(SW, LEDR, Hex);
+	input [17:0] SW;
+	output reg [0:6] Hex;
+
+	wire [2:0] S;
+	wire [2:0] M
+	
+	assign S[0] = SW[15];
+	assign S[1] = SW[16];
+	assign S[2] = SW[17];
+	assign LEDR = SW;
+	Mux_3w_5_to_1 U1(.S(S), .U(SW[14:12]), .V(SW[11:9]), .W(SW[8:6]), .X(SW[5:3]), .Y(SW[2:0]), .M(M);
+	HexHELO U2(Hex, M);
+endmodule
