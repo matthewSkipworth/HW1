@@ -4,13 +4,15 @@ vlib work
 # Compile Verilog
 #     All Verilog files that are part of this design should have
 #     their own "vlog" line below.
-vlog "./Mux_5_to_1.sv"
 vlog "./Mux_3w_5_to_1.sv"
+vlog "./Mux_5_to_1.sv"
+#vlog "./Mux_2_to_1.sv"
+
 
 # Call vsim to invoke simulator
 #     Make sure the last item on the line is the name of the
 #     testbench module you want to execute.
-vsim -voptargs="+acc" -t 1ps -lib work Mux_3w_5_to_1_testbench
+vsim -voptargs="+acc" -t 1ps -lib work MuxN_testbench
 
 # Source the wave do file
 #     This should be the file that sets up the signal window for

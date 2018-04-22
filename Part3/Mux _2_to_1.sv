@@ -1,3 +1,7 @@
+//Matthew Skipworth
+//Friday Session, Due: 20 April 2018
+
+// this module isn't used.  It describes a 2 to 1 multiplexor.
 module Mux_2_to_1(S, X, Y, M);
 	input S, X, Y;
 	output M;
@@ -5,7 +9,7 @@ module Mux_2_to_1(S, X, Y, M);
 	assign M = (~S & X) | (S & Y);
 endmodule
 
-module Mux_2_to_1_testbench();
+module Mux_2_to_1_testbench;
 
 	logic S, X, Y;
 	logic M;

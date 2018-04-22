@@ -1,7 +1,14 @@
-//Module that connects ten switches and lights
+//Matthew Skipworth
+//Friday Session, Due: 20 April 2018
+
+//Module that connects ten switches and lights.
+
 module Part1 (SW, LEDR);
+
+//input/ ouput assignments.
 input [17:0] SW; 
 output [17:0] LEDR;
+
 assign LEDR[0] = SW[0];
 assign LEDR[1] = SW[1];
 assign LEDR[2] = SW[2];

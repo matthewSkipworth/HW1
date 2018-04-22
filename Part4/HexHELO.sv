@@ -1,15 +1,21 @@
+//Matthew Skipworth
+//Friday Session, Due: 20 April 2018
+
+//This module describes the HexHELO module. This module is used to display
+//characters to spell out the word "HELLO".
 module HexHELO(Hex, C);
+//input/output assignments.
 	input [2:0] C;
 	output reg [0:6] Hex;
 	
-	not (Hex[0], C[0]);//assign Hex[0] = ~C[0];
-	xor(Hex[1], C[0], C[1]);//assign Hex[1] = C[0] xor C[1];
-	xor(Hex[2], C[0], C[1]);//assign Hex[2] = C[0] xor C[1];
-	nor(Hex[3], C[0], C[1]);//assign Hex[3] = C[0] nor C[1];
+//Hex display logic statements.
+	assign Hex[0] = ~C[0] | C[2];
+	assign Hex[1] = C[2] | ~C[1] & C[0] | C[1] & ~C[0];
+	assign Hex[2] = C[2] | ~C[1] & C[0] | C[1] & ~C[0];
+	assign Hex[3] = C[2] | ~C[1] & ~C[0];
 	assign Hex[4] = C[2];
 	assign Hex[5] = C[2];
-	assign Hex[6] = C[1];
-	
+	assign Hex[6] = C[1] | C[2];
 	
 	
 	/*

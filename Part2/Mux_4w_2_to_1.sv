@@ -1,18 +1,19 @@
+//Matthew Skipworth
+//Friday Session, Due: 20 April 2018
+
+//This module describes a 4-bit wide 2 to 1 multiplexor.
 module Mux_4w_2_to_1 (M, X, Y, S);
 	input [3:0] X;
 	input [3:0] Y;
 	input S;
 	output reg [3:0] M;
 
+	//2 to 1 mux logic statements.
 	assign M[0] = (~S & X[0]) | (S & Y[0]);
 	assign M[1] = (~S & X[1]) | (S & Y[1]);
 	assign M[2] = (~S & X[2]) | (S & Y[2]);
 	assign M[3] = (~S & X[3]) | (S & Y[3]);
-/*
-assign S = [17] SW;
-assign X = [3:0] SW;
-assign Y = [7:4] SW;
-*/
+
 endmodule
 
 module Mux_4w_2_to_1_testbench();
@@ -25,8 +26,6 @@ module Mux_4w_2_to_1_testbench();
  Mux_4w_2_to_1 dut(M, X, Y, S);
 
  initial begin
- //parameter maxVector = 4;
- //parameter selects = 2;
  
  S = 0; X[0] = 0; X[1] = 0; X[2] = 0; X[3] = 0; Y[0] = 0; Y[1] = 0; Y[2] = 0; Y[3] = 0; #10;
  S = 0; X[0] = 0; X[1] = 0; X[2] = 0; X[3] = 0; Y[0] = 0; Y[1] = 0; Y[2] = 0; Y[3] = 1; #10;
@@ -542,17 +541,5 @@ module Mux_4w_2_to_1_testbench();
  S = 1; X[0] = 1; X[1] = 1; X[2] = 1; X[3] = 1; Y[0] = 1; Y[1] = 1; Y[2] = 1; Y[3] = 1; #10;
 
 
- /*int i;
- int j; 
- int k;
-
- for (int i = 0; i < selects; i++) {
-	for (int j = 0; j < maxVector; j++) {
-		for (int k = 0; k < maxVector; k++) {
-		
-		}
-	}
- }*/
  end
 endmodule
-//module Mux_4w_2_to_1_testbench();

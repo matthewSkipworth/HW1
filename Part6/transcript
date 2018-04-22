@@ -1,0 +1,313 @@
+# Reading C:/intelFPGA_lite/17.0/modelsim_ase/tcl/vsim/pref.tcl
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:58:22 on Apr 20,2018
+# vlog -reportprogress 300 ./Mux_3W_8_to_1.sv 
+# -- Compiling module Mux_3w_8_to_1
+# -- Compiling module Mux_3w_8_to_1_testbench
+# 
+# Top level modules:
+# 	Mux_3w_8_to_1_testbench
+# End time: 08:58:26 on Apr 20,2018, Elapsed time: 0:00:04
+# Errors: 0, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Mux_3w_8_to_1_testbench 
+# Start time: 08:58:27 on Apr 20,2018
+# Loading sv_std.std
+# Loading work.Mux_3w_8_to_1_testbench
+# Loading work.Mux_3w_8_to_1
+# Loading work.Mux_8_to_1
+# ** Error: (vish-4014) No objects found matching '/MuxN_testbench/TESTN'.
+# Executing ONERROR command at macro ./wave.do line 3
+# ** Error: (vish-4014) No objects found matching '/MuxN_testbench/S'.
+# Executing ONERROR command at macro ./wave.do line 4
+# ** Error: (vish-4014) No objects found matching '/MuxN_testbench/A'.
+# Executing ONERROR command at macro ./wave.do line 5
+# ** Error: (vish-4014) No objects found matching '/MuxN_testbench/B'.
+# Executing ONERROR command at macro ./wave.do line 6
+# ** Error: (vish-4014) No objects found matching '/MuxN_testbench/C'.
+# Executing ONERROR command at macro ./wave.do line 7
+# ** Error: (vish-4014) No objects found matching '/MuxN_testbench/D'.
+# Executing ONERROR command at macro ./wave.do line 8
+# ** Error: (vish-4014) No objects found matching '/MuxN_testbench/E'.
+# Executing ONERROR command at macro ./wave.do line 9
+# ** Error: (vish-4014) No objects found matching '/MuxN_testbench/F'.
+# Executing ONERROR command at macro ./wave.do line 10
+# ** Error: (vish-4014) No objects found matching '/MuxN_testbench/G'.
+# Executing ONERROR command at macro ./wave.do line 11
+# ** Error: (vish-4014) No objects found matching '/MuxN_testbench/H'.
+# Executing ONERROR command at macro ./wave.do line 12
+# ** Error: (vish-4014) No objects found matching '/MuxN_testbench/M'.
+# Executing ONERROR command at macro ./wave.do line 13
+# ** Error: (vish-4014) No objects found matching '/MuxN_testbench/I'.
+# Executing ONERROR command at macro ./wave.do line 14
+# ** Error: (vish-4014) No objects found matching '/MuxN_testbench/RX'.
+# Executing ONERROR command at macro ./wave.do line 15
+# ** Error: (vish-4014) No objects found matching '/MuxN_testbench/RA'.
+# Executing ONERROR command at macro ./wave.do line 16
+# ** Error: (vish-4014) No objects found matching '/MuxN_testbench/RB'.
+# Executing ONERROR command at macro ./wave.do line 17
+# ** Error: (vish-4014) No objects found matching '/MuxN_testbench/RC'.
+# Executing ONERROR command at macro ./wave.do line 18
+# ** Error: (vish-4014) No objects found matching '/MuxN_testbench/RD'.
+# Executing ONERROR command at macro ./wave.do line 19
+# ** Error: (vish-4014) No objects found matching '/MuxN_testbench/RE'.
+# Executing ONERROR command at macro ./wave.do line 20
+# ** Error: (vish-4014) No objects found matching '/MuxN_testbench/RF'.
+# Executing ONERROR command at macro ./wave.do line 21
+# ** Error: (vish-4014) No objects found matching '/MuxN_testbench/RG'.
+# Executing ONERROR command at macro ./wave.do line 22
+# ** Error: (vish-4014) No objects found matching '/MuxN_testbench/RH'.
+# Executing ONERROR command at macro ./wave.do line 23
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#  I A B C D E F G H S M
+#          0 0010 0000 0111 0001 0001 0011 0010 0011 000 0010
+#          0 0010 0000 0111 0001 0001 0011 0010 0011 001 0000
+#          0 0010 0000 0111 0001 0001 0011 0010 0011 010 0111
+#          0 0010 0000 0111 0001 0001 0011 0010 0011 011 0001
+#          0 0010 0000 0111 0001 0001 0011 0010 0011 100 0001
+#          0 0010 0000 0111 0001 0001 0011 0010 0011 101 0011
+# ** Error: Assertion error.
+#    Time: 95 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 97
+#          0 0010 0000 0111 0001 0001 0011 0010 0011 110 0010
+#          0 0010 0000 0111 0001 0001 0011 0010 0011 111 0011
+#          1 0001 0001 0000 0100 0100 0111 0100 0111 000 0001
+#          1 0001 0001 0000 0100 0100 0111 0100 0111 001 0001
+#          1 0001 0001 0000 0100 0100 0111 0100 0111 010 0000
+#          1 0001 0001 0000 0100 0100 0111 0100 0111 011 0100
+#          1 0001 0001 0000 0100 0100 0111 0100 0111 100 0100
+#          1 0001 0001 0000 0100 0100 0111 0100 0111 101 0111
+# ** Error: Assertion error.
+#    Time: 220 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 97
+#          1 0001 0001 0000 0100 0100 0111 0100 0111 110 0100
+#          1 0001 0001 0000 0100 0100 0111 0100 0111 111 0111
+#          2 0111 0101 0101 0100 0001 0001 0100 0111 000 0111
+#          2 0111 0101 0101 0100 0001 0001 0100 0111 001 0101
+#          2 0111 0101 0101 0100 0001 0001 0100 0111 010 0101
+#          2 0111 0101 0101 0100 0001 0001 0100 0111 011 0100
+# ** Error: Assertion error.
+#    Time: 315 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 86
+#          2 0111 0101 0101 0100 0001 0001 0100 0111 100 0001
+#          2 0111 0101 0101 0100 0001 0001 0100 0111 101 0001
+# ** Error: Assertion error.
+#    Time: 345 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 97
+#          2 0111 0101 0101 0100 0001 0001 0100 0111 110 0100
+#          2 0111 0101 0101 0100 0001 0001 0100 0111 111 0111
+#          3 0110 0101 0101 0011 0111 0111 0000 0110 000 0110
+#          3 0110 0101 0101 0011 0111 0111 0000 0110 001 0101
+#          3 0110 0101 0101 0011 0111 0111 0000 0110 010 0101
+#          3 0110 0101 0101 0011 0111 0111 0000 0110 011 0011
+# ** Error: Assertion error.
+#    Time: 440 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 86
+#          3 0110 0101 0101 0011 0111 0111 0000 0110 100 0111
+#          3 0110 0101 0101 0011 0111 0111 0000 0110 101 0111
+# ** Error: Assertion error.
+#    Time: 470 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 97
+#          3 0110 0101 0101 0011 0111 0111 0000 0110 110 0000
+#          3 0110 0101 0101 0011 0111 0111 0000 0110 111 0110
+#          4 0001 0010 0001 0010 0110 0010 0100 0101 000 0001
+#          4 0001 0010 0001 0010 0110 0010 0100 0101 001 0010
+#          4 0001 0010 0001 0010 0110 0010 0100 0101 010 0001
+#          4 0001 0010 0001 0010 0110 0010 0100 0101 011 0010
+# ** Error: Assertion error.
+#    Time: 565 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 86
+#          4 0001 0010 0001 0010 0110 0010 0100 0101 100 0110
+#          4 0001 0010 0001 0010 0110 0010 0100 0101 101 0010
+# ** Error: Assertion error.
+#    Time: 595 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 97
+#          4 0001 0010 0001 0010 0110 0010 0100 0101 110 0100
+#          4 0001 0010 0001 0010 0110 0010 0100 0101 111 0101
+#          5 0001 0110 0100 0010 0100 0111 0011 0101 000 0001
+#          5 0001 0110 0100 0010 0100 0111 0011 0101 001 0110
+#          5 0001 0110 0100 0010 0100 0111 0011 0101 010 0100
+#          5 0001 0110 0100 0010 0100 0111 0011 0101 011 0010
+# ** Error: Assertion error.
+#    Time: 690 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 86
+#          5 0001 0110 0100 0010 0100 0111 0011 0101 100 0100
+#          5 0001 0110 0100 0010 0100 0111 0011 0101 101 0111
+# ** Error: Assertion error.
+#    Time: 720 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 97
+#          5 0001 0110 0100 0010 0100 0111 0011 0101 110 0011
+#          5 0001 0110 0100 0010 0100 0111 0011 0101 111 0101
+#          6 0010 0100 0010 0111 0110 0010 0010 0000 000 0010
+#          6 0010 0100 0010 0111 0110 0010 0010 0000 001 0100
+#          6 0010 0100 0010 0111 0110 0010 0010 0000 010 0010
+#          6 0010 0100 0010 0111 0110 0010 0010 0000 011 0111
+# ** Error: Assertion error.
+#    Time: 815 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 86
+#          6 0010 0100 0010 0111 0110 0010 0010 0000 100 0110
+#          6 0010 0100 0010 0111 0110 0010 0010 0000 101 0010
+#          6 0010 0100 0010 0111 0110 0010 0010 0000 110 0010
+#          6 0010 0100 0010 0111 0110 0010 0010 0000 111 0000
+#          7 0100 0100 0010 0011 0011 0011 0011 0001 000 0100
+#          7 0100 0100 0010 0011 0011 0011 0011 0001 001 0100
+#          7 0100 0100 0010 0011 0011 0011 0011 0001 010 0010
+#          7 0100 0100 0010 0011 0011 0011 0011 0001 011 0011
+#          7 0100 0100 0010 0011 0011 0011 0011 0001 100 0011
+#          7 0100 0100 0010 0011 0011 0011 0011 0001 101 0011
+#          7 0100 0100 0010 0011 0011 0011 0011 0001 110 0011
+#          7 0100 0100 0010 0011 0011 0011 0011 0001 111 0001
+#          8 0100 0010 0000 0011 0000 0010 0111 0010 000 0100
+#          8 0100 0010 0000 0011 0000 0010 0111 0010 001 0010
+#          8 0100 0010 0000 0011 0000 0010 0111 0010 010 0000
+#          8 0100 0010 0000 0011 0000 0010 0111 0010 011 0011
+# ** Error: Assertion error.
+#    Time: 1065 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 86
+#          8 0100 0010 0000 0011 0000 0010 0111 0010 100 0000
+#          8 0100 0010 0000 0011 0000 0010 0111 0010 101 0010
+# ** Error: Assertion error.
+#    Time: 1095 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 97
+#          8 0100 0010 0000 0011 0000 0010 0111 0010 110 0111
+#          8 0100 0010 0000 0011 0000 0010 0111 0010 111 0010
+# ** Note: $stop    : ./Mux_3W_8_to_1.sv(106)
+#    Time: 1125 ps  Iteration: 0  Instance: /Mux_3w_8_to_1_testbench
+# Break in Module Mux_3w_8_to_1_testbench at ./Mux_3W_8_to_1.sv line 106
+add wave -position end  sim:/Mux_3w_8_to_1_testbench/TESTN
+add wave -position end  sim:/Mux_3w_8_to_1_testbench/S
+add wave -position end  sim:/Mux_3w_8_to_1_testbench/A
+add wave -position end  sim:/Mux_3w_8_to_1_testbench/B
+add wave -position end  sim:/Mux_3w_8_to_1_testbench/C
+add wave -position end  sim:/Mux_3w_8_to_1_testbench/D
+add wave -position end  sim:/Mux_3w_8_to_1_testbench/E
+add wave -position end  sim:/Mux_3w_8_to_1_testbench/F
+add wave -position end  sim:/Mux_3w_8_to_1_testbench/G
+add wave -position end  sim:/Mux_3w_8_to_1_testbench/H
+add wave -position end  sim:/Mux_3w_8_to_1_testbench/M
+add wave -position end  sim:/Mux_3w_8_to_1_testbench/I
+add wave -position end  sim:/Mux_3w_8_to_1_testbench/RX
+add wave -position end  sim:/Mux_3w_8_to_1_testbench/RA
+add wave -position end  sim:/Mux_3w_8_to_1_testbench/RB
+add wave -position end  sim:/Mux_3w_8_to_1_testbench/RC
+add wave -position end  sim:/Mux_3w_8_to_1_testbench/RD
+add wave -position end  sim:/Mux_3w_8_to_1_testbench/RE
+add wave -position end  sim:/Mux_3w_8_to_1_testbench/RF
+add wave -position end  sim:/Mux_3w_8_to_1_testbench/RG
+add wave -position end  sim:/Mux_3w_8_to_1_testbench/RH
+write format wave -window .main_pane.wave.interior.cs.body.pw.wf F:/TCES330/labs/HW1/Part6/wave.do
+do runlab.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vlog 10.5b Compiler 2016.10 Oct  5 2016
+# Start time: 08:59:48 on Apr 20,2018
+# vlog -reportprogress 300 ./Mux_3W_8_to_1.sv 
+# -- Compiling module Mux_3w_8_to_1
+# -- Compiling module Mux_3w_8_to_1_testbench
+# 
+# Top level modules:
+# 	Mux_3w_8_to_1_testbench
+# End time: 08:59:51 on Apr 20,2018, Elapsed time: 0:00:03
+# Errors: 0, Warnings: 0
+# End time: 08:59:53 on Apr 20,2018, Elapsed time: 0:01:26
+# Errors: 76, Warnings: 0
+# vsim -voptargs=""+acc"" -t 1ps -lib work Mux_3w_8_to_1_testbench 
+# Start time: 08:59:53 on Apr 20,2018
+# Loading sv_std.std
+# Loading work.Mux_3w_8_to_1_testbench
+# Loading work.Mux_3w_8_to_1
+# Loading work.Mux_8_to_1
+# .main_pane.wave.interior.cs.body.pw.wf
+# .main_pane.structure.interior.cs.body.struct
+# .main_pane.objects.interior.cs.body.tree
+#  I A B C D E F G H S M
+#          0 0010 0000 0111 0001 0001 0011 0010 0011 000 0010
+#          0 0010 0000 0111 0001 0001 0011 0010 0011 001 0000
+#          0 0010 0000 0111 0001 0001 0011 0010 0011 010 0111
+#          0 0010 0000 0111 0001 0001 0011 0010 0011 011 0001
+#          0 0010 0000 0111 0001 0001 0011 0010 0011 100 0001
+#          0 0010 0000 0111 0001 0001 0011 0010 0011 101 0011
+# ** Error: Assertion error.
+#    Time: 95 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 97
+#          0 0010 0000 0111 0001 0001 0011 0010 0011 110 0010
+#          0 0010 0000 0111 0001 0001 0011 0010 0011 111 0011
+#          1 0001 0001 0000 0100 0100 0111 0100 0111 000 0001
+#          1 0001 0001 0000 0100 0100 0111 0100 0111 001 0001
+#          1 0001 0001 0000 0100 0100 0111 0100 0111 010 0000
+#          1 0001 0001 0000 0100 0100 0111 0100 0111 011 0100
+#          1 0001 0001 0000 0100 0100 0111 0100 0111 100 0100
+#          1 0001 0001 0000 0100 0100 0111 0100 0111 101 0111
+# ** Error: Assertion error.
+#    Time: 220 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 97
+#          1 0001 0001 0000 0100 0100 0111 0100 0111 110 0100
+#          1 0001 0001 0000 0100 0100 0111 0100 0111 111 0111
+#          2 0111 0101 0101 0100 0001 0001 0100 0111 000 0111
+#          2 0111 0101 0101 0100 0001 0001 0100 0111 001 0101
+#          2 0111 0101 0101 0100 0001 0001 0100 0111 010 0101
+#          2 0111 0101 0101 0100 0001 0001 0100 0111 011 0100
+# ** Error: Assertion error.
+#    Time: 315 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 86
+#          2 0111 0101 0101 0100 0001 0001 0100 0111 100 0001
+#          2 0111 0101 0101 0100 0001 0001 0100 0111 101 0001
+# ** Error: Assertion error.
+#    Time: 345 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 97
+#          2 0111 0101 0101 0100 0001 0001 0100 0111 110 0100
+#          2 0111 0101 0101 0100 0001 0001 0100 0111 111 0111
+#          3 0110 0101 0101 0011 0111 0111 0000 0110 000 0110
+#          3 0110 0101 0101 0011 0111 0111 0000 0110 001 0101
+#          3 0110 0101 0101 0011 0111 0111 0000 0110 010 0101
+#          3 0110 0101 0101 0011 0111 0111 0000 0110 011 0011
+# ** Error: Assertion error.
+#    Time: 440 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 86
+#          3 0110 0101 0101 0011 0111 0111 0000 0110 100 0111
+#          3 0110 0101 0101 0011 0111 0111 0000 0110 101 0111
+# ** Error: Assertion error.
+#    Time: 470 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 97
+#          3 0110 0101 0101 0011 0111 0111 0000 0110 110 0000
+#          3 0110 0101 0101 0011 0111 0111 0000 0110 111 0110
+#          4 0001 0010 0001 0010 0110 0010 0100 0101 000 0001
+#          4 0001 0010 0001 0010 0110 0010 0100 0101 001 0010
+#          4 0001 0010 0001 0010 0110 0010 0100 0101 010 0001
+#          4 0001 0010 0001 0010 0110 0010 0100 0101 011 0010
+# ** Error: Assertion error.
+#    Time: 565 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 86
+#          4 0001 0010 0001 0010 0110 0010 0100 0101 100 0110
+#          4 0001 0010 0001 0010 0110 0010 0100 0101 101 0010
+# ** Error: Assertion error.
+#    Time: 595 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 97
+#          4 0001 0010 0001 0010 0110 0010 0100 0101 110 0100
+#          4 0001 0010 0001 0010 0110 0010 0100 0101 111 0101
+#          5 0001 0110 0100 0010 0100 0111 0011 0101 000 0001
+#          5 0001 0110 0100 0010 0100 0111 0011 0101 001 0110
+#          5 0001 0110 0100 0010 0100 0111 0011 0101 010 0100
+#          5 0001 0110 0100 0010 0100 0111 0011 0101 011 0010
+# ** Error: Assertion error.
+#    Time: 690 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 86
+#          5 0001 0110 0100 0010 0100 0111 0011 0101 100 0100
+#          5 0001 0110 0100 0010 0100 0111 0011 0101 101 0111
+# ** Error: Assertion error.
+#    Time: 720 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 97
+#          5 0001 0110 0100 0010 0100 0111 0011 0101 110 0011
+#          5 0001 0110 0100 0010 0100 0111 0011 0101 111 0101
+#          6 0010 0100 0010 0111 0110 0010 0010 0000 000 0010
+#          6 0010 0100 0010 0111 0110 0010 0010 0000 001 0100
+#          6 0010 0100 0010 0111 0110 0010 0010 0000 010 0010
+#          6 0010 0100 0010 0111 0110 0010 0010 0000 011 0111
+# ** Error: Assertion error.
+#    Time: 815 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 86
+#          6 0010 0100 0010 0111 0110 0010 0010 0000 100 0110
+#          6 0010 0100 0010 0111 0110 0010 0010 0000 101 0010
+#          6 0010 0100 0010 0111 0110 0010 0010 0000 110 0010
+#          6 0010 0100 0010 0111 0110 0010 0010 0000 111 0000
+#          7 0100 0100 0010 0011 0011 0011 0011 0001 000 0100
+#          7 0100 0100 0010 0011 0011 0011 0011 0001 001 0100
+#          7 0100 0100 0010 0011 0011 0011 0011 0001 010 0010
+#          7 0100 0100 0010 0011 0011 0011 0011 0001 011 0011
+#          7 0100 0100 0010 0011 0011 0011 0011 0001 100 0011
+#          7 0100 0100 0010 0011 0011 0011 0011 0001 101 0011
+#          7 0100 0100 0010 0011 0011 0011 0011 0001 110 0011
+#          7 0100 0100 0010 0011 0011 0011 0011 0001 111 0001
+#          8 0100 0010 0000 0011 0000 0010 0111 0010 000 0100
+#          8 0100 0010 0000 0011 0000 0010 0111 0010 001 0010
+#          8 0100 0010 0000 0011 0000 0010 0111 0010 010 0000
+#          8 0100 0010 0000 0011 0000 0010 0111 0010 011 0011
+# ** Error: Assertion error.
+#    Time: 1065 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 86
+#          8 0100 0010 0000 0011 0000 0010 0111 0010 100 0000
+#          8 0100 0010 0000 0011 0000 0010 0111 0010 101 0010
+# ** Error: Assertion error.
+#    Time: 1095 ps  Scope: Mux_3w_8_to_1_testbench File: ./Mux_3W_8_to_1.sv Line: 97
+#          8 0100 0010 0000 0011 0000 0010 0111 0010 110 0111
+#          8 0100 0010 0000 0011 0000 0010 0111 0010 111 0010
+# ** Note: $stop    : ./Mux_3W_8_to_1.sv(106)
+#    Time: 1125 ps  Iteration: 0  Instance: /Mux_3w_8_to_1_testbench
+# Break in Module Mux_3w_8_to_1_testbench at ./Mux_3W_8_to_1.sv line 106

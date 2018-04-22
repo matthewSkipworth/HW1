@@ -1,5 +1,5 @@
 Analysis & Synthesis report for Part5
-Tue Apr 17 01:01:08 2018
+Thu Apr 19 17:50:39 2018
 Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
 
 
@@ -9,15 +9,14 @@ Quartus Prime Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
   1. Legal Notice
   2. Analysis & Synthesis Summary
   3. Analysis & Synthesis Settings
-  4. Parallel Compilation
-  5. Analysis & Synthesis Source Files Read
-  6. Analysis & Synthesis Resource Usage Summary
-  7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Multiplexer Restructuring Statistics (Restructuring Performed)
- 10. Post-Synthesis Netlist Statistics for Top Partition
- 11. Elapsed Time Per Partition
- 12. Analysis & Synthesis Messages
+  4. Analysis & Synthesis Source Files Read
+  5. Analysis & Synthesis Resource Usage Summary
+  6. Analysis & Synthesis Resource Utilization by Entity
+  7. General Register Statistics
+  8. Multiplexer Restructuring Statistics (Restructuring Performed)
+  9. Post-Synthesis Netlist Statistics for Top Partition
+ 10. Elapsed Time Per Partition
+ 11. Analysis & Synthesis Messages
 
 
 
@@ -44,16 +43,16 @@ agreement for further details.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 17 01:01:08 2018       ;
+; Analysis & Synthesis Status        ; Successful - Thu Apr 19 17:50:39 2018       ;
 ; Quartus Prime Version              ; 17.0.0 Build 595 04/25/2017 SJ Lite Edition ;
 ; Revision Name                      ; Part5                                       ;
 ; Top-level Entity Name              ; Part5                                       ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 10                                          ;
-;     Total combinational functions  ; 10                                          ;
+; Total logic elements               ; 56                                          ;
+;     Total combinational functions  ; 56                                          ;
 ;     Dedicated logic registers      ; 0                                           ;
 ; Total registers                    ; 0                                           ;
-; Total pins                         ; 65                                          ;
+; Total pins                         ; 53                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -147,64 +146,48 @@ agreement for further details.
 +----------------------------------------------------------------------------+--------------------+--------------------+
 
 
-+------------------------------------------+
-; Parallel Compilation                     ;
-+----------------------------+-------------+
-; Processors                 ; Number      ;
-+----------------------------+-------------+
-; Number detected on machine ; 4           ;
-; Maximum allowed            ; 2           ;
-;                            ;             ;
-; Average used               ; 1.00        ;
-; Maximum used               ; 1           ;
-;                            ;             ;
-; Usage by Processor         ; % Time Used ;
-;     Processor 1            ; 100.0%      ;
-+----------------------------+-------------+
-
-
 +------------------------------------------------------------------------------------------------------------------------------------------+
 ; Analysis & Synthesis Source Files Read                                                                                                   ;
 +----------------------------------+-----------------+------------------------------+--------------------------------------------+---------+
 ; File Name with User-Entered Path ; Used in Netlist ; File Type                    ; File Name with Absolute Path               ; Library ;
 +----------------------------------+-----------------+------------------------------+--------------------------------------------+---------+
-; Part5.sv                         ; yes             ; User SystemVerilog HDL File  ; E:/TCES330/labs/HW1/Part5/Part5.sv         ;         ;
-; Mux_5_to_1.sv                    ; yes             ; User SystemVerilog HDL File  ; E:/TCES330/labs/HW1/Part5/Mux_5_to_1.sv    ;         ;
-; Mux_3w_5_to_1.sv                 ; yes             ; User SystemVerilog HDL File  ; E:/TCES330/labs/HW1/Part5/Mux_3w_5_to_1.sv ;         ;
-; HexHELO.sv                       ; yes             ; User SystemVerilog HDL File  ; E:/TCES330/labs/HW1/Part5/HexHELO.sv       ;         ;
+; Part5.sv                         ; yes             ; User SystemVerilog HDL File  ; F:/TCES330/labs/HW1/Part5/Part5.sv         ;         ;
+; Mux_5_to_1.sv                    ; yes             ; User SystemVerilog HDL File  ; F:/TCES330/labs/HW1/Part5/Mux_5_to_1.sv    ;         ;
+; Mux_3w_5_to_1.sv                 ; yes             ; User SystemVerilog HDL File  ; F:/TCES330/labs/HW1/Part5/Mux_3w_5_to_1.sv ;         ;
+; HexHELO.sv                       ; yes             ; User SystemVerilog HDL File  ; F:/TCES330/labs/HW1/Part5/HexHELO.sv       ;         ;
 +----------------------------------+-----------------+------------------------------+--------------------------------------------+---------+
 
 
-+----------------------------------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary                                      ;
-+---------------------------------------------+------------------------------------+
-; Resource                                    ; Usage                              ;
-+---------------------------------------------+------------------------------------+
-; Estimated Total logic elements              ; 10                                 ;
-;                                             ;                                    ;
-; Total combinational functions               ; 10                                 ;
-; Logic element usage by number of LUT inputs ;                                    ;
-;     -- 4 input functions                    ; 6                                  ;
-;     -- 3 input functions                    ; 1                                  ;
-;     -- <=2 input functions                  ; 3                                  ;
-;                                             ;                                    ;
-; Logic elements by mode                      ;                                    ;
-;     -- normal mode                          ; 10                                 ;
-;     -- arithmetic mode                      ; 0                                  ;
-;                                             ;                                    ;
-; Total registers                             ; 0                                  ;
-;     -- Dedicated logic registers            ; 0                                  ;
-;     -- I/O registers                        ; 0                                  ;
-;                                             ;                                    ;
-; I/O pins                                    ; 65                                 ;
-;                                             ;                                    ;
-; Embedded Multiplier 9-bit elements          ; 0                                  ;
-;                                             ;                                    ;
-; Maximum fan-out node                        ; Mux_3w_5_to_1:M1|Mux_5_to_1:M1|M~0 ;
-; Maximum fan-out                             ; 5                                  ;
-; Total fan-out                               ; 108                                ;
-; Average fan-out                             ; 0.77                               ;
-+---------------------------------------------+------------------------------------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 56           ;
+;                                             ;              ;
+; Total combinational functions               ; 56           ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 36           ;
+;     -- 3 input functions                    ; 9            ;
+;     -- <=2 input functions                  ; 11           ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 56           ;
+;     -- arithmetic mode                      ; 0            ;
+;                                             ;              ;
+; Total registers                             ; 0            ;
+;     -- Dedicated logic registers            ; 0            ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 53           ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; SW[16]~input ;
+; Maximum fan-out                             ; 30           ;
+; Total fan-out                               ; 281          ;
+; Average fan-out                             ; 1.73         ;
++---------------------------------------------+--------------+
 
 
 +------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -212,12 +195,32 @@ agreement for further details.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+---------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name                   ; Entity Name   ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+---------------+--------------+
-; |Part5                     ; 10 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 65   ; 0            ; |Part5                                ; Part5         ; work         ;
+; |Part5                     ; 56 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 53   ; 0            ; |Part5                                ; Part5         ; work         ;
 ;    |HexHELO:H0|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|HexHELO:H0                     ; HexHELO       ; work         ;
-;    |Mux_3w_5_to_1:M1|      ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:M1               ; Mux_3w_5_to_1 ; work         ;
-;       |Mux_5_to_1:M0|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:M1|Mux_5_to_1:M0 ; Mux_5_to_1    ; work         ;
-;       |Mux_5_to_1:M1|      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:M1|Mux_5_to_1:M1 ; Mux_5_to_1    ; work         ;
-;       |Mux_5_to_1:M2|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:M1|Mux_5_to_1:M2 ; Mux_5_to_1    ; work         ;
+;    |HexHELO:H1|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|HexHELO:H1                     ; HexHELO       ; work         ;
+;    |HexHELO:H2|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|HexHELO:H2                     ; HexHELO       ; work         ;
+;    |HexHELO:H3|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|HexHELO:H3                     ; HexHELO       ; work         ;
+;    |HexHELO:H4|            ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|HexHELO:H4                     ; HexHELO       ; work         ;
+;    |Mux_3w_5_to_1:G1|      ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:G1               ; Mux_3w_5_to_1 ; work         ;
+;       |Mux_5_to_1:M0|      ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:G1|Mux_5_to_1:M0 ; Mux_5_to_1    ; work         ;
+;       |Mux_5_to_1:M1|      ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:G1|Mux_5_to_1:M1 ; Mux_5_to_1    ; work         ;
+;       |Mux_5_to_1:M2|      ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:G1|Mux_5_to_1:M2 ; Mux_5_to_1    ; work         ;
+;    |Mux_3w_5_to_1:G2|      ; 10 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:G2               ; Mux_3w_5_to_1 ; work         ;
+;       |Mux_5_to_1:M0|      ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:G2|Mux_5_to_1:M0 ; Mux_5_to_1    ; work         ;
+;       |Mux_5_to_1:M1|      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:G2|Mux_5_to_1:M1 ; Mux_5_to_1    ; work         ;
+;       |Mux_5_to_1:M2|      ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:G2|Mux_5_to_1:M2 ; Mux_5_to_1    ; work         ;
+;    |Mux_3w_5_to_1:G3|      ; 9 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:G3               ; Mux_3w_5_to_1 ; work         ;
+;       |Mux_5_to_1:M0|      ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:G3|Mux_5_to_1:M0 ; Mux_5_to_1    ; work         ;
+;       |Mux_5_to_1:M1|      ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:G3|Mux_5_to_1:M1 ; Mux_5_to_1    ; work         ;
+;       |Mux_5_to_1:M2|      ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:G3|Mux_5_to_1:M2 ; Mux_5_to_1    ; work         ;
+;    |Mux_3w_5_to_1:G4|      ; 10 (0)              ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:G4               ; Mux_3w_5_to_1 ; work         ;
+;       |Mux_5_to_1:M0|      ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:G4|Mux_5_to_1:M0 ; Mux_5_to_1    ; work         ;
+;       |Mux_5_to_1:M1|      ; 4 (4)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:G4|Mux_5_to_1:M1 ; Mux_5_to_1    ; work         ;
+;       |Mux_5_to_1:M2|      ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:G4|Mux_5_to_1:M2 ; Mux_5_to_1    ; work         ;
+;    |Mux_3w_5_to_1:G5|      ; 8 (0)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:G5               ; Mux_3w_5_to_1 ; work         ;
+;       |Mux_5_to_1:M0|      ; 2 (2)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:G5|Mux_5_to_1:M0 ; Mux_5_to_1    ; work         ;
+;       |Mux_5_to_1:M1|      ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:G5|Mux_5_to_1:M1 ; Mux_5_to_1    ; work         ;
+;       |Mux_5_to_1:M2|      ; 3 (3)               ; 0 (0)                     ; 0           ; 0            ; 0       ; 0         ; 0    ; 0            ; |Part5|Mux_3w_5_to_1:G5|Mux_5_to_1:M2 ; Mux_5_to_1    ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------------------------+---------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -242,7 +245,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output              ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
-; 4:1                ; 3 bits    ; 6 LEs         ; 6 LEs                ; 0 LEs                  ; No         ; |Part5|Mux_3w_5_to_1:M1|Mux_5_to_1:M1|M ;
+; 3:1                ; 15 bits   ; 30 LEs        ; 30 LEs               ; 0 LEs                  ; No         ; |Part5|Mux_3w_5_to_1:G5|Mux_5_to_1:M1|M ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+-----------------------------------------+
 
 
@@ -251,17 +254,16 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 65                          ;
-; cycloneiii_lcell_comb ; 13                          ;
-;     normal            ; 13                          ;
-;         0 data inputs ; 1                           ;
-;         1 data inputs ; 2                           ;
-;         2 data inputs ; 3                           ;
-;         3 data inputs ; 1                           ;
-;         4 data inputs ; 6                           ;
+; boundary_port         ; 53                          ;
+; cycloneiii_lcell_comb ; 66                          ;
+;     normal            ; 66                          ;
+;         1 data inputs ; 10                          ;
+;         2 data inputs ; 11                          ;
+;         3 data inputs ; 9                           ;
+;         4 data inputs ; 36                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 5.00                        ;
-; Average LUT depth     ; 3.68                        ;
+; Average LUT depth     ; 3.89                        ;
 +-----------------------+-----------------------------+
 
 
@@ -280,84 +282,38 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 17.0.0 Build 595 04/25/2017 SJ Lite Edition
-    Info: Processing started: Tue Apr 17 01:00:55 2018
+    Info: Processing started: Thu Apr 19 17:50:14 2018
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off Part5 -c Part5
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
+Info (20029): Only one processor detected - disabling parallel compilation
 Info (12021): Found 1 design units, including 1 entities, in source file part5.sv
-    Info (12023): Found entity 1: Part5 File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 1
+    Info (12023): Found entity 1: Part5 File: F:/TCES330/labs/HW1/Part5/Part5.sv Line: 1
 Info (12021): Found 2 design units, including 2 entities, in source file mux_5_to_1.sv
-    Info (12023): Found entity 1: Mux_5_to_1 File: E:/TCES330/labs/HW1/Part5/Mux_5_to_1.sv Line: 1
-    Info (12023): Found entity 2: Mux_5_to_1_testbench File: E:/TCES330/labs/HW1/Part5/Mux_5_to_1.sv Line: 19
+    Info (12023): Found entity 1: Mux_5_to_1 File: F:/TCES330/labs/HW1/Part5/Mux_5_to_1.sv Line: 1
+    Info (12023): Found entity 2: Mux_5_to_1_testbench File: F:/TCES330/labs/HW1/Part5/Mux_5_to_1.sv Line: 19
 Info (12021): Found 1 design units, including 1 entities, in source file mux_3w_5_to_1.sv
-    Info (12023): Found entity 1: Mux_3w_5_to_1 File: E:/TCES330/labs/HW1/Part5/Mux_3w_5_to_1.sv Line: 1
+    Info (12023): Found entity 1: Mux_3w_5_to_1 File: F:/TCES330/labs/HW1/Part5/Mux_3w_5_to_1.sv Line: 1
 Info (12021): Found 1 design units, including 1 entities, in source file hexhelo.sv
-    Info (12023): Found entity 1: HexHELO File: E:/TCES330/labs/HW1/Part5/HexHELO.sv Line: 1
+    Info (12023): Found entity 1: HexHELO File: F:/TCES330/labs/HW1/Part5/HexHELO.sv Line: 1
 Info (12127): Elaborating entity "Part5" for the top level hierarchy
-Warning (10036): Verilog HDL or VHDL warning at Part5.sv(7): object "M" assigned a value but never read File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 7
-Warning (10034): Output port "HEX0" at Part5.sv(4) has no driver File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-Warning (10034): Output port "HEX1" at Part5.sv(4) has no driver File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-Warning (10034): Output port "HEX2" at Part5.sv(4) has no driver File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-Warning (10034): Output port "HEX3" at Part5.sv(4) has no driver File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-Warning (10034): Output port "Hout" at Part5.sv(29) has no driver File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 29
-Warning (10034): Output port "Eout" at Part5.sv(29) has no driver File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 29
-Warning (10034): Output port "Lout" at Part5.sv(29) has no driver File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 29
-Info (12128): Elaborating entity "Mux_3w_5_to_1" for hierarchy "Mux_3w_5_to_1:M1" File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 34
-Info (12128): Elaborating entity "Mux_5_to_1" for hierarchy "Mux_3w_5_to_1:M1|Mux_5_to_1:M0" File: E:/TCES330/labs/HW1/Part5/Mux_3w_5_to_1.sv Line: 13
-Info (12128): Elaborating entity "HexHELO" for hierarchy "HexHELO:H0" File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 35
-Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "HEX0[6]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX0[5]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX0[4]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX0[3]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX0[2]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX0[1]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX0[0]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX1[6]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX1[5]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX1[4]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX1[3]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX1[2]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX1[1]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX1[0]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX2[6]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX2[5]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX2[4]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX2[3]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX2[2]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX2[1]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX2[0]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX3[6]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX3[5]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX3[4]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX3[3]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX3[2]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX3[1]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "HEX3[0]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 4
-    Warning (13410): Pin "Hout[0]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 29
-    Warning (13410): Pin "Hout[1]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 29
-    Warning (13410): Pin "Hout[2]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 29
-    Warning (13410): Pin "Eout[0]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 29
-    Warning (13410): Pin "Eout[1]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 29
-    Warning (13410): Pin "Eout[2]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 29
-    Warning (13410): Pin "Lout[0]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 29
-    Warning (13410): Pin "Lout[1]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 29
-    Warning (13410): Pin "Lout[2]" is stuck at GND File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 29
+Info (12128): Elaborating entity "Mux_3w_5_to_1" for hierarchy "Mux_3w_5_to_1:G1" File: F:/TCES330/labs/HW1/Part5/Part5.sv Line: 15
+Info (12128): Elaborating entity "Mux_5_to_1" for hierarchy "Mux_3w_5_to_1:G1|Mux_5_to_1:M0" File: F:/TCES330/labs/HW1/Part5/Mux_3w_5_to_1.sv Line: 13
+Info (12128): Elaborating entity "HexHELO" for hierarchy "HexHELO:H0" File: F:/TCES330/labs/HW1/Part5/Part5.sv Line: 16
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
 Warning (21074): Design contains 3 input pin(s) that do not drive logic
-    Warning (15610): No output dependent on input pin "SW[0]" File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 2
-    Warning (15610): No output dependent on input pin "SW[1]" File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 2
-    Warning (15610): No output dependent on input pin "SW[2]" File: E:/TCES330/labs/HW1/Part5/Part5.sv Line: 2
-Info (21057): Implemented 75 device resources after synthesis - the final resource count might be different
+    Warning (15610): No output dependent on input pin "SW[0]" File: F:/TCES330/labs/HW1/Part5/Part5.sv Line: 2
+    Warning (15610): No output dependent on input pin "SW[1]" File: F:/TCES330/labs/HW1/Part5/Part5.sv Line: 2
+    Warning (15610): No output dependent on input pin "SW[2]" File: F:/TCES330/labs/HW1/Part5/Part5.sv Line: 2
+Info (21057): Implemented 109 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 18 input pins
-    Info (21059): Implemented 47 output pins
-    Info (21061): Implemented 10 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 51 warnings
-    Info: Peak virtual memory: 669 megabytes
-    Info: Processing ended: Tue Apr 17 01:01:08 2018
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:26
+    Info (21059): Implemented 35 output pins
+    Info (21061): Implemented 56 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 5 warnings
+    Info: Peak virtual memory: 618 megabytes
+    Info: Processing ended: Thu Apr 19 17:50:39 2018
+    Info: Elapsed time: 00:00:25
+    Info: Total CPU time (on all processors): 00:00:20
 
 

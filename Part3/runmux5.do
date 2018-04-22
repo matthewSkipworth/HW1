@@ -4,7 +4,9 @@ vlib work
 # Compile Verilog
 #     All Verilog files that are part of this design should have
 #     their own "vlog" line below.
+
 vlog "./Mux_5_to_1.sv"
+
 
 # Call vsim to invoke simulator
 #     Make sure the last item on the line is the name of the
